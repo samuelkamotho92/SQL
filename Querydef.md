@@ -25,11 +25,15 @@ Finaly :smiley: lets create our first database using  SQL Server instance using 
 
 #### Sytax
 
+```
 CREATE DATABASE
+```
 
 ## Example 
 
-`CREATE DATABASE directedDB`
+```
+CREATE DATABASE directedDB
+```
 
 ## Droping Database
 
@@ -41,9 +45,13 @@ DROP DATABASE
 
 ## Example 
 
-`DROP DATABASE directedDB`
+```
+DROP DATABASE directedDB
+```
 
-`DROP IF EXISTS directedDB`
+```
+DROP IF EXISTS directedDB
+```
 
 The above code checks if the database does exist before deleting this helps to prevent any error occuring after trying to delete noe existing database
 
@@ -59,9 +67,13 @@ CREAT SCHEMA schema_name
 
 ## Example 
 
-`CREAT SCHEMA adminstrative`
+```
+CREAT SCHEMA adminstrative
+```
 
-`CREAT SCHEMA academic`
+```
+CREAT SCHEMA academic
+```
 ## Alter Schema
 
 
@@ -84,14 +96,20 @@ One has to note that while reomoving a schema you have to first remove the table
 
 #### Sytax
 
-`DROP SCHEMA schema_name`
+```
+DROP SCHEMA schema_name
+```
 
 
 ## Example 
 
-`DROP SCHEMA adminstrative`
+```
+DROP SCHEMA adminstrative
+```
 
-`DROP SCHEMA academic`
+```
+DROP SCHEMA academic
+```
 ## Creating a  Table
 
 Basically we use tables to store data in our database
@@ -124,7 +142,9 @@ CREATE TABLE  adminstrative.students(
 )
 ```
 
-`DROP SCHEMA academic`
+```
+DROP SCHEMA academic
+```
 ## Server Idenity
 
 
@@ -155,26 +175,38 @@ Used to remove a table in a database
 
 #### Sytax
 
-`DROP TABLE SCHEMA.table_name`
+```
+DROP TABLE SCHEMA.table_name
+```
 
-`DROP TABLE IF EXISTS SCHEMA.table_name`
+```
+DROP TABLE IF EXISTS SCHEMA.table_name
+```
 
 ## Example 
 
-`DROP TABLE adminstrative.students;`
+```
+DROP TABLE adminstrative.students;
+```
 ## Dropping Table
 
 Used to remove a table in a database  just like Dropping does
 
 #### Sytax
 
-`DROP TABLE SCHEMA.table_name`
+```
+DROP TABLE SCHEMA.table_name
+```
 
-`DROP TABLE IF EXISTS SCHEMA.table_name`
+```
+DROP TABLE IF EXISTS SCHEMA.table_name
+```
 
 ## Example 
 
-`DROP TABLE adminstrative.students;`
+```
+DROP TABLE adminstrative.students;
+```
 ## Rename Table
 
 
