@@ -68,11 +68,11 @@ CREAT SCHEMA schema_name
 ## Example 
 
 ```
-CREAT SCHEMA adminstrative
+CREATe SCHEMA adminstrative
 ```
 
 ```
-CREAT SCHEMA academic
+CREATe SCHEMA academic
 ```
 ## Alter Schema
 
