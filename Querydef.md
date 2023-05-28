@@ -63,7 +63,7 @@ It is the logic structure of your database example in our case our database we c
 
 #### Sytax
 
-CREAT SCHEMA schema_name
+CREATE SCHEMA schema_name
 
 ## Example 
 
@@ -367,6 +367,91 @@ adminstrative.students
 ORDER BY
  firstName
 ```
+### The SQL SELECT DISTINCT Statement
+
+The SELECT DISTINCT statement is used to return only distinct (different) values.
+
+Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.
+
+### SELECT DISTINCT Syntax
+```SQL
+SELECT DISTINCT column1, column2, ...
+FROM table_name;
+
+
+```
+ID | Name   | Department
+---|--------|------------
+1  | John   | HR
+2  | Mary   | Finance
+3  | John   | Sales
+4  | Peter  | HR
+5  | John   | Finance
+
+
+### Example
+```SQL
+SELECT DISTINCT Name
+FROM Employees;
+
+
+
+```
+### The result will be:
+```SQL
+Name
+-----
+John
+Mary
+Peter
+```
+The SELECT DISTINCT Name statement retrieves the distinct values from the Name column of the Employees table. It eliminates duplicate occurrences of the same name and returns only the unique names present in the table.
+
+It's important to note that SELECT DISTINCT applies to all the selected columns. If you specify multiple columns, the combination of values across those columns will be considered for uniqueness. For example:
+
+```SQL
+SELECT DISTINCT Name, Department
+FROM Employees;
+```
+
+This query will retrieve distinct combinations of Name and Department from the Employees table, eliminating duplicate rows based on both columns.
+
+<span style="color: orange;">In summary, SELECT DISTINCT is used to retrieve unique values from one or more columns in a table, removing duplicates and returning only distinct values.
+</span>
+
+
+### <span style= "color: green">The SQL WHERE Clause</span>
+  
+   SQL SYNTAX
+   ```SQL
+   SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+```
+ 
+Consider a table called Employees with the following columns: ID, Name, Department, and Salary. Here's an example of the table's contents:
+ID | Name   | Department | Salary
+---|--------|------------|-------
+1  | John   | HR         | 50000
+2  | Mary   | Finance    | 60000
+3  | Peter  | HR         | 55000
+4  | Emma   | Marketing  | 45000
+5  | James  | Finance    | 65000
+
+
+```SQL
+SELECT Name, Salary
+FROM Employees
+WHERE Salary > 55000
+```
+This will select the names and of the people who will meet the condition where salary is greater than 55000.
+  
+  Name  | Salary
+------|--------
+Mary  | 60000
+James | 65000
+
+
 
 Group bY
 
