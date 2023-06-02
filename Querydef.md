@@ -265,7 +265,7 @@ DROP COLUMN
 
 ```SQL
 ALTER TABLE adminstrative.students
-DROP phone
+DROP COLUMN phone
 ```
 ## Computed Colums
 One can join two colums together and create another coumn
